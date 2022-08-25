@@ -45,9 +45,9 @@ def calcularCusto(caminho, values):
 
     percorrer = [(3, 0)] + coordenadas + [(3, 0)]
     for i in range(len(percorrer) - 1):
-        city_A = percorrer[i]
-        city_B = percorrer[i + 1]
-        custo += abs((city_A[0] - city_B[0])) + abs((city_A[1] - city_B[1]))
+        ponto_a = percorrer[i]
+        ponto_b = percorrer[i + 1]
+        custo += abs((ponto_a[0] - ponto_b[0])) + abs((ponto_a[1] - ponto_b[1]))
     custo_total = custo
     if MENOR_CUSTO == 0:
        MENOR_CUSTO = custo_total
